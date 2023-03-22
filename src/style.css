@@ -78,14 +78,14 @@ body {
 
 @keyframes ray {
     0% {
-        transform: rotate(-15deg);
+        transform: rotate(-15deg) scaleX(1.35);
     }
 
     50% {
-        transform: rotate(15deg);
+        transform: rotate(15deg) scaleX(1.35);
     }
 
     100% {
-        transform: rotate(-15deg);
+        transform: rotate(-15deg) scaleX(1.35);
     }
 }
