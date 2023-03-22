@@ -1,0 +1,91 @@
+body {
+    background-color: #1c1c1c;
+    color: white;
+    margin: 0;
+    overflow: hidden;
+}
+
+.app {
+    min-height: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn-violet {
+    color: purple;
+    border: 2px solid purple;
+}
+
+.btn-white {
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-blue {
+    color: lightskyblue;
+    border: 2px solid lightskyblue;
+}
+
+.btn-yellow {
+    color: yellow;
+    border: 2px solid yellow;
+}
+
+.btn-all {
+    color: orangered;
+    border: 2px solid orangered;
+}
+
+.projector, .ray {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.projector::after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.ray__img {
+    animation: ray 2s infinite ease-in-out;
+    transform-origin: 100px 100px;
+}
+
+@keyframes ray {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
